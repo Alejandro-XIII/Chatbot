@@ -101,3 +101,35 @@ body {
 .button:hover {
     background-color: #0056b3;
 }
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .content {
+        max-height: 300px;
+    }
+
+    /* Coloca el campo de texto y el botón en vertical en lugar de horizontal */
+    .centered-form {
+        flex-direction: column;
+    }
+
+    .form-control {
+        width: 100%;
+        margin-right: 0; /* Quita margen derecho en pantalla pequeña */
+    }
+
+    .button {
+        width: 100%;
+        margin-left: 0; /* Quita margen izquierdo en pantalla pequeña */
+        margin-top: 10px; /* Agrega margen superior para separar del campo de texto */
+    }
+}
