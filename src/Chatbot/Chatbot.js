@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import React, { useState } from "react";
+import './Chatbot.css';
 
 // Accede a tu API Key desde las variables de entorno
 const genAI = new GoogleGenerativeAI(process.env.REACT_APP_API_KEY);
